@@ -32,10 +32,25 @@ function toggleDone(){
 
 function createListItem(text){
     const newListElement = document.createElement("li");
+    const newListElementx =  document.createElement("span");
+    newListElementx.textContent = "x";
+    newListElementx.setAttribute("class", "close");
+    newListElement.setAttribute("class", "todo__item");
     newListElement.textContent = text;
-    newListElement.setAttribute("class", "todo__item")
+    newListElement.appendChild(newListElementx);
     return newListElement;
 }
 
+function removeListItem(){
+    todoListEl.addEventListener("click", function(event){
+        if (event.target.classList.contains("close")){
+            event.target.parentNode.remove();
+        }
+    })
+
+}
+
+
 toggleDone();
 addListItem();
+removeListItem();

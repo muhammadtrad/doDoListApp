@@ -62,3 +62,16 @@ body{
     border-bottom: 2px solid rgb(65, 52, 32);
 }
 
+.close{
+  cursor: pointer;
+  border-right: 10px; 
+  position: absolute; 
+  right: 12rem;
+
+
+
+}
+
+.close:hover{
+    color: red;
+}
