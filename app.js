@@ -31,6 +31,8 @@ function toggleDone(){
 
 
 function createListItem(text){
+
+    if (text.trim().length !== 0){
     const newListElement = document.createElement("li");
     const newListElementx =  document.createElement("span");
     newListElementx.textContent = "x";
@@ -39,6 +41,7 @@ function createListItem(text){
     newListElement.textContent = text;
     newListElement.appendChild(newListElementx);
     return newListElement;
+    }
 }
 
 function removeListItem(){

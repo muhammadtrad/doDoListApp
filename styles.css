@@ -64,14 +64,11 @@ body{
 
 .close{
   cursor: pointer;
-  border-right: 10px; 
-  position: absolute; 
-  right: 12rem;
-
-
-
+  position: relative; 
+  float: right;
 }
 
 .close:hover{
     color: red;
+
 }
